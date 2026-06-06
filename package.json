@@ -1,0 +1,57 @@
+{
+  "name": "@producktive/day-widget",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "React custom element for the Producktive day planning experience — drag-and-drop time blocks with an AI Day Architect.",
+  "author": "Kamil Poniatowski",
+  "license": "MIT",
+  "homepage": "https://github.com/kamilponiatowski/producktive-day-widget#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilponiatowski/producktive-day-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kamilponiatowski/producktive-day-widget/issues"
+  },
+  "keywords": [
+    "day-planner",
+    "time-blocks",
+    "productivity",
+    "custom-element",
+    "web-component",
+    "react",
+    "openai",
+    "ai",
+    "schedule"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "./dist/producktive-day.js",
+  "module": "./dist/producktive-day.js",
+  "exports": {
+    ".": "./dist/producktive-day.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5174",
+    "typecheck": "tsc -p tsconfig.build.json --noEmit",
+    "build": "tsc -p tsconfig.build.json && vite build",
+    "prepublishOnly": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.8.0",
+    "vite": "^7.0.0"
+  }
+}

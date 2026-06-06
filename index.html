@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producktive Day Widget</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: #0a0e14;
+      }
+    </style>
+  </head>
+  <body>
+    <producktive-day
+      locale="pl"
+      api-base="/api/day-agent"
+      storage-key="producktive.day.dev"
+      start-hour="5"
+      end-hour="23"
+      step-minutes="15"
+      theme="producktive"
+    ></producktive-day>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
