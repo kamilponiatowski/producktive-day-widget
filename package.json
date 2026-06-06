@@ -1,6 +1,6 @@
 {
   "name": "@producktive/day-widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "description": "React custom element for the Producktive day planning experience — drag-and-drop time blocks with an AI Day Architect.",
