@@ -6,10 +6,11 @@ export default defineConfig({
     emptyOutDir: true,
     cssCodeSplit: false,
     lib: {
-      entry: 'src/main.ts',
+      entry: {
+        'producktive-day': 'src/main.ts',
+        'server': 'src/server/index.ts',
+      },
       formats: ['es'],
-      fileName: () => 'producktive-day.js',
     },
   },
 })
-// ../public/widgets/producktive-day
